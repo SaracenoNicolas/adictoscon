@@ -8,5 +8,6 @@ function sendEmail() {
 
 //init function
 (function()	{
+	document.getElementById("conRegister").removeEventListener("submit", sendEmail);
 	document.getElementById("conRegister").addEventListener("submit", sendEmail);
 })();
