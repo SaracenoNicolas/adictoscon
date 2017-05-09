@@ -5,7 +5,7 @@
 New Event
 http://www.templatemo.com/tm-486-new-event
 -->
-<title>Funko Pop Adictos Con 2017 - Argentina</title>
+<title>Funko Pop, Adictos Con 2017 - Argentina</title>
 <meta name="description" content="">
 <meta name="author" content="">
 <meta charset="UTF-8">
@@ -83,7 +83,7 @@ http://www.templatemo.com/tm-486-new-event
 
 			<div class="col-md-12 col-sm-12">
 				<h3 class="wow bounceIn" data-wow-delay="0.9s">Coming soon!</h3>
-				<h1 class="wow fadeInUp" data-wow-delay="1.6s">The first funko pop convention in Argentina</h1>
+				<h1 class="wow fadeInUp" data-wow-delay="1.6s">La primer convencion de Funko Pop en Argentina</h1>
 				<!--<a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">LEARN MORE</a>
 				<a href="#register" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">REGISTER NOW</a> -->
 			</div>
@@ -153,12 +153,12 @@ http://www.templatemo.com/tm-486-new-event
 		<div class="row">
 
 			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.3s">
-				<h2>Watch Video</h2>
-				<h3>Lo del video no se si vale la pena ponerlo (si es que tienen ganas y tiempo de armarse un video) aca se puede poner alguna imagen o lo que quieran</h3>
+				<h2>Geeky!</h2>
+				<h3>Cineaste oficial de Adictos!</h3>
 			</div>
 			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.6s">
 				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q9AWFksRViw" allowfullscreen></iframe>
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IJlLkmcDHNQ" allowfullscreen></iframe>
 				</div>
 			</div>
 
@@ -287,7 +287,6 @@ http://www.templatemo.com/tm-486-new-event
 <section id="register" class="parallax-section">
 	<div class="container">
 		<div class="row">
-<!--
 			<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="0.6s">
 				<h2>Register Here</h2>
 				<h3>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit.</h3>
@@ -295,7 +294,7 @@ http://www.templatemo.com/tm-486-new-event
 			</div>
 
 			<div class="wow fadeInUp col-md-5 col-sm-5" data-wow-delay="1s">
-				<form action="#" method="post">
+				<form id="conRegister"action="#" method="post" enctype="text/plain" onsubmit="return sendEmail(this);">>
 					<input name="firstname" type="text" class="form-control" id="firstname" placeholder="First Name">
 					<input name="lastname" type="text" class="form-control" id="lastname" placeholder="Last Name">
 					<input name="phone" type="telephone" class="form-control" id="phone" placeholder="Phone Number">
@@ -307,7 +306,6 @@ http://www.templatemo.com/tm-486-new-event
 			</div>
 
 			<div class="col-md-1"></div>
--->
 		</div>
 	</div>
 </section>
@@ -490,7 +488,11 @@ http://www.templatemo.com/tm-486-new-event
 <!-- Back top -->
 <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
 
-
+<!-- =========================
+     LIBRARIES   
+============================== -->
+<script src="bundle.js"></script>
+<script type="libraries/mailgun.js"></script>
 <!-- =========================
      SCRIPTS   
 ============================== -->
@@ -501,6 +503,6 @@ http://www.templatemo.com/tm-486-new-event
 <script src="js/smoothscroll.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
-
+<script src="js/form.js"></script>
 </body>
 </html>
