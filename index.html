@@ -294,14 +294,20 @@ http://www.templatemo.com/tm-486-new-event
 			</div>
 
 			<div class="wow fadeInUp col-md-5 col-sm-5" data-wow-delay="1s">
-				<form id="conRegister"action="#" method="post" enctype="text/plain">
-					<input name="firstname" type="text" class="form-control" id="firstname" placeholder="First Name">
-					<input name="lastname" type="text" class="form-control" id="lastname" placeholder="Last Name">
-					<input name="phone" type="telephone" class="form-control" id="phone" placeholder="Phone Number">
-					<input name="email" type="email" class="form-control" id="email" placeholder="Email Address">
-					<div class="col-md-offset-6 col-md-6 col-sm-offset-1 col-sm-10">
-						<input name="submit" type="submit" class="form-control" id="submit" value="REGISTER">
-					</div>
+				<form id="gform" action="https://script.google.com/macros/s/AKfycbzGB809qk1Q0jiaak1PWoDV4M-33JYhdfhhBdWb80ayeGdF_js1/exec" method="POST">
+					<fieldset>
+						<label for="name">Tu Nombre:</label>
+						<input name="name" type="text" class="form-control" id="firstname" placeholder="First Name">
+					</fieldset>
+
+					<fieldset>
+						<label for="email">Tu Email</label>
+						<input name="email" type="email" class="form-control" id="email" placeholder="Email Address">
+					</fieldset>
+
+						<div class="col-md-offset-6 col-md-6 col-sm-offset-1 col-sm-10">
+							<input name="submit" type="submit" class="form-control" id="submit" value="REGISTER">
+						</div>
 				</form>
 			</div>
 
@@ -491,11 +497,10 @@ http://www.templatemo.com/tm-486-new-event
 <!-- =========================
      LIBRARIES   
 ============================== -->
-<script src="bundle.js"></script>
-<script type="libraries/mailgun.js"></script>
 <!-- =========================
      SCRIPTS   
 ============================== -->
+<!-- https://script.google.com/macros/s/AKfycbzGB809qk1Q0jiaak1PWoDV4M-33JYhdfhhBdWb80ayeGdF_js1/exec -->
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.parallax.js"></script>
