@@ -419,12 +419,20 @@ footer {
 /*---------------------------------------
     Regsiter section              
 -----------------------------------------*/
+#register-loading {
+  display: none;
+}
+
+#register-successful {
+  display: none;
+}
+
 #register {
-    background: url('../images/coming-soon-register.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-    color: #ffffff;
+    color: black;
 }
 
 #register .form-control {
@@ -526,7 +534,7 @@ footer {
    Venue section              
 -----------------------------------------*/
 #venue {
-    background: url('../images/coming-soon-venue.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
     padding-top: 7rem;

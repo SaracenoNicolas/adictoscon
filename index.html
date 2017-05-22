@@ -297,25 +297,37 @@ http://www.templatemo.com/tm-486-new-event
 				<form id="gform" action="https://script.google.com/macros/s/AKfycbzGB809qk1Q0jiaak1PWoDV4M-33JYhdfhhBdWb80ayeGdF_js1/exec" method="POST">
 					<fieldset>
 						<label for="name">Tu Nombre:</label>
-						<input name="name" type="text" class="form-control" id="firstname" placeholder="First Name">
-					</fieldset>
+						<input name="name" type="text" class="form-control" id="firstname" placeholder="First Name" required>
 
-					<fieldset>
 						<label for="email">Tu Email</label>
-						<input name="email" type="email" class="form-control" id="email" placeholder="Email Address">
+						<input name="email" type="email" class="form-control" id="email" placeholder="Email Address" required>
+
+						<label for="dni">Documento</label>
+						<input name="dni" type="text" class="form-control" id="dni" placeholder="DNI" required>
+
+						<label for="telefono">Telefono de contacto</label>
+						<input name="telefono" type="text" class="form-control" id="telefono" placeholder="Telefono" required>
 					</fieldset>
 
 						<div class="col-md-offset-6 col-md-6 col-sm-offset-1 col-sm-10">
 							<input name="submit" type="submit" class="form-control" id="submit" value="REGISTER">
 						</div>
 				</form>
-			</div>
 
-			<div class="col-md-1"></div>
+				<div id="register-loading">
+					<h2>Cargando tus datos</h2>
+				</div>
+
+				<div id="register-successful">
+					<div>
+						<h2>Gracias por Anotarte en la Adictos Con!</h2>
+						<p>Tene en cuenta que tu reserva aun no esta confirmada, nos vamos a contactar con vos para concretar el pago y ultimar detalles.</p>
+					</div>
+				</div>	
+			</div>	
 		</div>
 	</div>
 </section>
-
 
 <!-- =========================
     FAQ SECTION   
@@ -377,8 +389,7 @@ http://www.templatemo.com/tm-486-new-event
     VENUE SECTION   
 ============================== -->
 <section id="venue" class="parallax-section">
-	DESCRIPCION DEL LUGAR
-	<!--<div class="container">
+	<div class="container">
 		<div class="row">
 
 			<div class="wow fadeInLeft col-md-offset-1 col-md-5 col-sm-8" data-wow-delay="0.9s">
@@ -390,7 +401,7 @@ http://www.templatemo.com/tm-486-new-event
 				<h4>Tel: 010-020-0120</h4>		
 			</div>
 
-		</div> -->
+		</div>
 	</div>
 </section>
 
